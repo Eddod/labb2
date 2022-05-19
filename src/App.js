@@ -7,7 +7,7 @@ import mooseimg from './images/bild4.jpg';
 import happymomimg from './images/mamma.jpg';
 import mammaspeakimg from './images/mammatalar.jpeg';
 // import {useState, useEffect} from 'react';
-import {Route, Routes, Link} from 'react-router-dom'
+import {Route, Routes, Link} from 'react-router-dom';
 
 //JSON FILER JS
 // vart den ska
