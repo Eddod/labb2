@@ -1,72 +1,13 @@
 import './App.css';
 import './cv.css';
-// import data from './cv.js'
+import { Portfolio } from './portfolio';
 import teddyimg from './images/bild1.jpg';
 import ciggfishimg from './images/bild3.jpg';
 import mooseimg from './images/bild4.jpg';
 import happymomimg from './images/mamma.jpg';
 import mammaspeakimg from './images/mammatalar.jpeg';
-// import {useState, useEffect} from 'react';
-import {Route, Routes, Link} from 'react-router-dom';
-
-//JSON FILER JS
-// vart den ska
-//const cvname = document.getElementById("cvName");
-
-// vad den är
-// const cv = fetch("./CV.json")
-// .then(response => {
-//    return response.json();
-// })
-// .then(cvData => {
-//   // cvData === CV.json
-//   // vad som ska
-//   cvname.innerText = cvData.name
-
-//   // <div class="services">
-//   const servicesContainers = document.getElementsByClassName("services")
-//   const servicesContainer = servicesContainers[0]
-
-//   // Loopa igenom experiences
-//   cvData.experiences.forEach(experience => {
-
-//     const serviceDivElement = document.createElement('div')
-//     serviceDivElement.classList.add("service")
-
-//     const titleElement = document.createElement('h3')
-//     const descriptionElement = document.createElement('p')
-
-//     titleElement.innerText = experience.title
-//     descriptionElement.innerText = experience.description
-
-//     serviceDivElement.appendChild(titleElement)
-//     serviceDivElement.appendChild(descriptionElement)
-
-//     servicesContainer.appendChild(serviceDivElement)
-//   })
-// });
-
-
-
-
-// //FEST EASTEREGG
-// const sequence = "fest"
-// let input=""
-
-// document.addEventListener('keydown', (event) => {
-
-//     input+= event.key;
-//     console.log(input);
-
-// if(input.length > 4 && input!= sequence){
-//   input=""
-// }
-// else if(input === sequence){
-//   alert('DAGS FÖR KALAS')
-//   document.body.style.backgroundColor='salmon';
-// }
-// });
-
+import {useState, useEffect} from 'react';
+import {Route, Router, Link} from 'react-router-dom';
 
 function Home () {
     return (
@@ -213,7 +154,7 @@ function AboutMe() {
                     <a href="https://github.com/Eddod/Labb1GenericsAvancerad" className="portfolio__item">
                         <img src={ciggfishimg} alt="målning av mor"className="portfolio__img"/>
                     </a>
-
+                    <Portfolio/>
                 </div>
             </section>
         </section>
@@ -266,24 +207,16 @@ function NeonButton(){
     )
 }
 
-// function InputEasterEgg{
 
-// }
 
 function App() {
   return (
     <div className="App">
-
-        <HamburgerMenu />
-         
-        <Home/>
-        
-        <Experience/>
-
-        <AboutMe/>
-
-        <Footer/>
-    
+            <HamburgerMenu />
+            <Home/>
+            <Experience/>
+            <AboutMe/>
+            <Footer/>
     </div>
   );
 }

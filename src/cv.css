@@ -402,7 +402,9 @@ header{
 .portfolio__img:hover{
   opacity: 0.75;
 }
-
+.github_portfolio{
+  position:relative;
+}
 
 /*footer*/
 
